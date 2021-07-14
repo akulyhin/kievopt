@@ -1,0 +1,36 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+@import 'normalize';
+@import 'helpers/variables';
+@import 'base';
+
+@import 'components/header';
+@import 'components/main-screen';
+@import 'components/kievopt';
+@import 'components/opencart';
+@import 'components/templates';
+@import 'components/table';
+@import 'components/start-steps';
+@import 'components/comparsion';
+@import 'components/advantages';
+@import 'components/marketing-tools';
+@import 'components/our-sites';
+@import 'components/box-solution';
+@import 'components/escort';
+@import 'components/marketplace';
+
+
+@import 'components/modalForm';
+@import 'components/modalProduct';
+@import 'components/communication';
+@import 'components/modalTemplates';
+@import 'components/faq';
+
+@import 'components/mobileTable';
+
+@import 'components/footer';
+
+@import 'components/roistat';
+@import 'components/utm';

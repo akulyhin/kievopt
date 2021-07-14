@@ -1,0 +1,254 @@
+.table-price {
+    margin-top: 100px;
+    display: block;
+
+    & i {
+            color: #a5a5a5;
+    }
+
+    // @media (max-width: 767px) {
+    //     display: none;
+    // }
+}
+
+.table thead th {
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.table td,
+.table .center {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table td i {
+    color: green;
+    font-size: 18px;
+}
+
+.table td i.fa-download {
+    color: yellowgreen;
+    font-size: 18px;
+}
+
+.table td i.fa-times {
+    color: #999;
+}
+
+.table tbody th i {
+    cursor: pointer;
+}
+
+
+.table-price_options {
+    font-size: 28px;
+    font-weight: 600;
+    color: #000;
+}
+
+.price-options {
+    cursor: pointer;
+    position: relative;
+}
+
+.table th.function-th {
+    min-width: 180px;
+}
+
+.table.table-fixed th.function-th,
+.table.table-fixedRF th.function-th {
+    min-width: 230px;
+}
+
+.price td {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.head {
+    position: sticky;
+    top: 0;
+}
+
+.tooltip.show {
+    opacity: 1;
+}
+
+.table th {
+    font-size: 1em;
+    font-weight: 500;
+    vertical-align: middle;
+    max-width: 260px;
+    min-width: 200px;
+}
+
+a.program-modal {
+    border-bottom: 1px dotted $main-color;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.coast td i {
+    color: #000;
+    font-size: 15px;
+}
+
+
+.table-trigger {
+    position: relative;
+}
+
+.table-fixed,
+.table-fixedRF {
+    position: relative;
+    top: 0 !important;
+    display: none;
+    background-color: rgba(255, 255, 255, .95);
+}
+
+@media (min-width: 991px) {
+    .active-table {
+        display: table;
+        position: fixed;
+    }
+}
+
+
+// Swither
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input.swither:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input.swither:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input.swither:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+
+  .swither-block {
+      text-align: center;
+      margin-left: auto;
+        width: 300px;
+        max-width: 300px;
+  }
+
+  .swither-block h3 {
+      font-size: 18px;
+      font-weight: 800;
+      text-transform: uppercase;
+  }
+
+  .price-options th {
+      position: relative;
+  }
+
+  .price-options span {
+    margin-left: 25px;
+    display: block;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        left: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 1px solid #cccccc;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-right: 10px;  
+      }
+
+      &::after {
+        content: "";
+        background-image: url('../images/check-solid.svg');
+        display: none;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        padding-left: 3px;
+        padding-top: 1px;
+        font-size: 12px;
+      }
+
+      &.checked::after {
+          display: inline-block;
+      }
+  }
+ 
+  .price-options .price-options_check {
+    display: inline-block;
+    // position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 0;
+    border: 1px solid #cccccc;
+    border-radius: 9px;
+    background-color: #fff;
+    margin-right: 10px;
+  }
+
+
+  .coast {
+    display: none;
+  }

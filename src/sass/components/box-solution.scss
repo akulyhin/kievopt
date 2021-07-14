@@ -1,0 +1,142 @@
+.box-solutions {
+    padding: 120px 0;
+}
+
+
+body[country="Ukraine"] .box-price.ua {
+    display: block;
+}
+
+
+body[country="Ukraine"] .box-price.rus {
+    display: none;
+}
+
+
+body[country="Russian"] .box-price.ua {
+    display: none;
+}
+
+
+body[country="Russian"] .box-price.rus {
+    display: block;
+}
+
+
+
+.box-solutions a {
+    text-decoration: none;
+    color: $main-color;
+}
+
+.box-list {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 60px;
+
+    @media (max-width: 650px) {
+        flex-wrap: wrap;
+    }
+}
+
+.under-title a {
+    font-weight: 600;
+}
+
+.box-item {
+    list-style-type: none;
+    box-sizing: border-box;
+    border: 1px solid $main-color;
+    background: #fff;
+    padding: 25px 15px;
+    width: 300px;
+    max-width: 100%;
+    min-width: 200px;
+    transition: all .3s linear;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 0 25px rgba(0, 0, 0, .45);
+    }
+
+    @media (max-width: 650px) {
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, .45);
+    }
+}
+
+.box-item.recommended {
+    height: 700px;
+    margin: -25px -10px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 0px 25px #606060;
+    background: linear-gradient(145deg,#068CFE 0%,#3254BC 100%);
+
+    &:hover {
+        box-shadow: 0 0 25px 10px rgba(0, 0, 0, .45);
+    }
+
+    @media (max-width: 767px) {
+        height: auto;
+        margin: -25px -10px;
+        height: 780px;
+    }
+
+    @media (max-width: 650px) {
+        margin: 25px 0;
+        box-shadow: none;
+        height: auto;
+    }
+}
+
+.box-item_main {
+    text-align: center;
+    padding: 25px;
+    border-bottom: 1px solid $main-color;
+}
+
+.box-item.recommended, .box-item.recommended .box-title {
+    color: #fff;
+}
+
+.box-item.recommended .box-item_main {
+    border-color: #fff;
+}
+
+.box-title {
+    font-size: 1.8em;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $main-color;
+}
+
+.box-price {
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.box-item_description {
+    text-align: center;
+    min-height: 500px;
+
+    @media (max-width: 767px) {
+        min-height: 590px;
+    }
+
+    @media (max-width: 650px) {
+        display: block;
+        min-height: auto;
+    }
+}
+
+.box-item_description ul {
+    padding: 0;
+}
+
+.box-item_description li {
+    list-style-type: none;
+    padding: 10px 0;
+}

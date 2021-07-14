@@ -1,0 +1,39 @@
+.marketplace {
+    padding: 80px 0;
+    background: linear-gradient(91.03deg,#068CFE 0%,#3254BC 100%);
+    color: #fff;
+}
+
+.marketplace .title-main-h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.marketplace p {
+    font-size: 18px;
+}
+
+.marketplace img {
+    width: 100%;
+}
+
+.marketplace-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marketplace .main-btn {
+    margin: 40px auto;
+}
+
+
+.marketplace .sign-in {
+    text-align: center;
+    background: #c9c9c9;
+    color: #000;
+
+    &:hover {
+        background: #707070;
+    }
+}

@@ -1,0 +1,40 @@
+
+.owl-carousel.mobile-prices {
+    display: none;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.owl-carousel {
+    margin-top: 200px;
+    margin-bottom: 250px;
+}
+
+.owl-carousel .item {
+    min-height: 10rem;
+    // background: #4DC7A0;
+    padding: 1rem;
+}
+
+.owl-theme .test button.owl-dot.active {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.test {
+    display: flex;
+    width: 100%;
+}
+
+.owl-theme .test button.owl-dot {
+    width: 50%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.mobile-prices i {
+    color: #a5a5a5;
+}
+

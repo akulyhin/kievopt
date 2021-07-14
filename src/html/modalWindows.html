@@ -1,0 +1,116 @@
+<!-- Модальное окно: ПРОДУКТЫ -->
+<div class="white-popup mfp-hide" id="exampleModal" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Заявка на <span></span></h5>
+          <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+        </div>
+        <div class="modal-body">
+            
+            <form id="form-action" method="POST" autocomplete="off">
+  
+                <div class="pum-content" style="text-align: center;">
+                <!-- <p style="color: #000;"><strong>Заполните поля формы:</strong></p> -->
+                <div class="form-input" align="center" style="width: 300px; max-width: 100%; margin: 0 auto;">
+                  <div class="input-div" style="width: 350px; max-width: 100%; margin-left: auto; margin-right: auto;">
+                  <div class="date-control">
+                <input type="text" name="name-11" autocomplete="off" id="name" class="name-input callback" placeholder="Введите Ваше имя" style="width: 300px" required  /><div class="date-label psevdo"><label for="name">Ваше имя</label></div></div>
+                <p></p>
+                <div class="date-control">
+                <input type="tel" name="tel-10" id="telProduct" autocomplete="off" class="tel-input callback" minlength="17" placeholder="Введите Ваш телефон" style="width: 300px" required><div class="date-label psevdo"><label for="tel">Ваш телефон</label></div></div>
+                <p></p>
+                <div class="date-control">
+                  <input type="email" name="email" autocomplete="off" class="city-input callback email-input" placeholder="Email адрес" style="width: 300px" required><div class="date-label psevdo"><label for="city">Email</label></div></div>
+                <p></p>
+                <input type="hidden" name="product" id="rate">
+                <input type="hidden" name="utm_source" id="utm_source">
+                <input type="hidden" name="utm_medium" id="utm_medium">
+                <input type="hidden" name="utm_campaign" id="utm_campaign">
+                <input type="hidden" name="utm_content" id="utm_content">
+                <input type="hidden" name="utm_term" id="utm_term">
+                <input type="hidden" name="price" id="product_price">
+                <input type="hidden" name="template" id="product_template">
+                <p></p>
+                <br></br>
+          
+                <p><button type="submit" class="form-submit btn btn-primary">
+                    <span class="spinner-border spinner-border-sm hidden" role="status" aria-hidden="true"></span>
+                    Оставить заявку!
+                </button>
+                </p></div></div></div>
+                </p>
+                    <!-- New FORM -->
+                  </form>
+          
+                  <div id="post_form_success"></div>
+
+        
+        </div>
+        <div class="modal-footer justify-content-start">
+            <div class="modal-options"><strong>Дополнительные опции:</strong><br> <ul></ul></div>
+        </div>
+
+        <div class="modal-footer">
+            <strong>Предварительная цена: </strong><span class="prices"></span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Модальное окно: ПРОДУКТЫ -->
+
+
+  <!-- Модальное окно: ЗАЯВКА -->
+<div class="white-popup mfp-hide" id="modalRequest" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalRequestLabel">Заявка на демонстрацию</h5>
+          <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+        </div>
+        <div class="modal-body">
+            
+            <form id="form-request" method="POST" autocomplete="off">
+  
+                <div class="pum-content" style="text-align: center;">
+                <!-- <p style="color: #000;"><strong>Заполните поля формы:</strong></p> -->
+                <div class="form-input" align="center" style="width: 300px; max-width: 100%; margin: 0 auto;">
+                  <div class="input-div" style="width: 350px; max-width: 100%; margin-left: auto; margin-right: auto;">
+                  <div class="date-control">
+                <input type="text" name="name-11" autocomplete="off" id="name_request" class="name-input callback" placeholder="Введите Ваше имя" style="width: 300px" required  /><div class="date-label psevdo"><label for="name">Ваше имя</label></div></div>
+                <p></p>
+                <div class="date-control">
+                <input type="tel" name="tel-10" autocomplete="off" id="tel_request" class="tel-input callback" minlength="17" placeholder="Введите Ваш телефон" style="width: 300px" required><div class="date-label psevdo"><label for="tel">Ваш телефон</label></div></div>
+                <p></p>
+                <div class="date-control">
+                  <input type="email" name="email" autocomplete="off" id="email_request" class="city-input callback email-input" placeholder="Email адрес" style="width: 300px" required><div class="date-label psevdo"><label for="city">Email</label></div></div>
+                <p></p>
+                <input type="hidden" name="product" value="Демонстрация">
+                <input type="hidden" name="utm_source" id="utm_source_request">
+                <input type="hidden" name="utm_medium" id="utm_medium_request">
+                <input type="hidden" name="utm_campaign" id="utm_campaign_request">
+                <input type="hidden" name="utm_content" id="utm_content_request">
+                <input type="hidden" name="utm_term" id="utm_term_request">
+                <input type="hidden" name="template" id="product_template2">
+                <p></p>
+                <br></br>
+          
+                <p><button type="submit" id="submit-callback" class="form-submit form-request btn btn-primary">
+                    <span class="spinner-border spinner-border-sm hidden" role="status" aria-hidden="true"></span>
+                    Оставить заявку!
+                </button>
+                </p></div></div></div>
+                </p>
+                    <!-- New FORM -->
+                  </form>
+          
+                  <div id="post_form_success2"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Модальное окно: ЗАЯВКА -->

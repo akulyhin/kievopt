@@ -1,0 +1,35 @@
+section.faq {
+    padding: 120px 0;
+}
+
+.faq .card:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.faq .card {
+    border: 0;
+    box-shadow: 0 0 12px 2px #ccc;
+    border-radius: 8px !important;
+}
+
+.faq .card-header {
+    background-color: #fff;
+}
+
+.faq-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-btn span {
+    font-weight: 600;
+}
+
+.faq-btn:focus {
+    box-shadow: none;
+}
+
+.faq .card li {
+    line-height: 2;
+}
